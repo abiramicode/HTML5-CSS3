@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)file:///E:/webapp/product.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<title>E-Commerce Website Single Product</title>
+	<link rel="stylesheet" type="text/css" href="./E-Commerce Website Single Product_files/e.css">
+
+	<link rel="stylesheet" href="./E-Commerce Website Single Product_files/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+		<link rel="stylesheet" type="text/css" href="./E-Commerce Website Single Product_files/font-awesome.min.css">
+	<script src="./E-Commerce Website Single Product_files/jquery-3.4.1.slim.min.js.download"></script>
+
+<script src="./E-Commerce Website Single Product_files/bootstrap.min.js.download" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+
+<style type="text/css">
+
+
+
+ /*-------------------------footer------------------------------*/
+
+ .footer
+ {
+ 	margin-top: 50px;
+ 	background: #000;
+ 	color: #fff;
+ }
+ .footer h1
+ {
+ 	font-size: 15px;
+ 	margin: 25px 0;
+ }
+ .footer p
+ {
+ 	font-size: 12px;
+ }
+
+
+ .copyright
+ {
+ 	margin-bottom: -80px;
+ 	text-align: center;
+ 	font-size: 15px;
+ 	padding-bottom: 20px;
+ }
+
+ .fa-heart-o
+ {
+ 	color: red;
+ 	font-size: 15px;
+ }
+ .footer hr
+ {
+ 	margin-top: 10px;
+ 	background-color: #ccc;
+ }
+ .footer image img
+ {
+ 	width: 150px;
+
+ }
+ .footer .row .fa
+ {
+ 	padding-right: 20px;
+ 	font-size: 15px;
+ }
+
+
+	
+	 /*-------------single product------------------*/
+.single-product{
+
+	margin-top: 70px;
+}
+.new-arrival
+{
+	background: green;
+	width:50px;
+	color: #fff;
+	font-size: 12px;
+	font-weight: bold;
+	margin-top: 20px;
+
+}
+.col-md-7 h2
+{
+	color: #555;
+}
+.single-product .fa
+{
+	color: orange;
+
+}
+.single-product .price
+{
+	color: orange;
+	font-size: 26px;
+	font-weight: bold;
+	padding-top: 20px;
+}
+
+.single-product input
+{
+   border: 1px solid #ccc;
+   font-weight: bold;
+   height: 33px;
+   text-align: center;
+   width: 30px;
+
+}
+
+.single-product .btn-primary
+{
+	background: orange !important;
+	color: #fff;
+	font-size: 15px;
+	margin-left: 20px;
+	border: none;
+	box-shadow: none !important;
+}
+
+/*--------------product description-------------------------*/
+.product-description h6
+{
+	margin-top: 50px;
+	color: orange;
+}
+.product-description p
+{
+	margin-top: 30px;
+}
+.product-description hr
+{
+	margin-bottom: 50px;
+}
+
+
+ /*-------------on Sale product css----------------*/
+
+ .title-box
+ {
+ 	background: orange;
+ 	color: #fff;
+ 	width: 180px;
+ 	padding: 4px 10px;
+ 	height: 40px;
+ 	margin-bottom: 30px;
+ 	display: flex;
+ }
+ .title-box h2
+ {
+ 	font-size: 24px;
+ }
+ .title-box::after
+ {
+    content: '';
+    border-top: 40px solid orange;
+    border-right: 50px solid transparent;
+    position: absolute;
+    display: flex;
+    margin-top: -4px;
+    margin-left: 170px;
+
+ }
+
+
+ /*----------------product top-css-----------------*/
+ .product-top img
+ {
+ 	width: 100%;
+
+ }
+ .overlay-right
+ {
+ 	display: block;
+ 	opacity: 0;
+ 	position: absolute;
+ 	top: 10%;
+ 	margin-left: 0;
+ 	width: 70px;
+    
+ }
+ .overlay-right .fa
+ {
+ 	cursor: pointer;
+ 	background-color: #fff;
+ 	color: #000;
+ 	height: 35px;
+ 	width: 35px;
+ 	font-size: 20px;
+ 	padding: 7px;
+ 	margin-top: 5%;
+ 	margin-bottom: 5%;
+ }
+
+ .overlay-right .btn-secondary
+ {
+ 	background: none !important;
+ 	border: none !important;
+ 	box-shadow: none !important;
+ }
+ .product-top:hover .overlay-right
+ {
+   opacity: 1;
+   margin-left: 5%;
+   transition: 0.5s;
+ }
+
+
+ /*-------------product bottom css-------------------*/
+ .product-bottom .fa
+ {
+     color: orange;
+     font-size: 10px;
+ }
+ .product-bottom h3
+ {
+ 	font-size: 20px;
+ 	font-weight: bold;
+
+ }
+
+ .product-bottom h5
+ {
+ 	font-size: 15px;
+ 	padding-bottom: 10px;
+ }
+
+ .new-products
+ {
+ 	margin: 50px 0;
+ }
+
+</style>
+</head>
+<body>
+
+	<div class="top-nav-bar">
+ 	<div class="search-box">
+ 		<i class="fa fa-bars" id="menu-btn" onclick="openmenu()"></i>
+ 		<i class="fa fa-times" id="close-btn" onclick="closemenu()"></i>
+
+<a href="file:///E:/webapp/ecom.html"><img src="./E-Commerce Website Single Product_files/download.jpg" class="logo"></a>
+ 	<input type="text" class="form-control">
+ 	<span class="input-group-text"><i class="fa fa-search"></i></span>
+ 	</div>
+
+ 	<div class="menu-bar">
+ 		<ul>
+ 		<li><a href="file:///E:/webapp/product.html#"><i class="fa fa-shopping-basket"></i>Cart</a></li>
+ 		<li><a href="file:///E:/webapp/product.html#">Sign Up</a></li>
+ 		<li><a href="file:///E:/webapp/product.html#">Log In</a></li>
+ 	
+ 		</ul>	
+ 	</div>
+	</div>
+
+
+<!-- ----------------Single Product---------------------------------- -->
+
+<section class="single-product">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-5">
+
+				<div id="product-slider" class="carousel slide carousel-fade" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item">
+      <a href="file:///E:/webapp/ecom.html"><img src="./E-Commerce Website Single Product_files/as.jpg" class="d-block w-100"></a>
+    </div>
+    <div class="carousel-item active">
+      <a href="file:///E:/webapp/ecom.html"><img src="./E-Commerce Website Single Product_files/asf.jpg" class="d-block w-100"></a>
+    </div>
+    <div class="carousel-item">
+      <a href="file:///E:/webapp/ecom.html"><img src="./E-Commerce Website Single Product_files/xe.jpeg" class="d-block w-100"></a>
+    </div>
+   
+   <a class="carousel-control-prev" href="file:///E:/webapp/product.html#product-slider" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="file:///E:/webapp/product.html#product-slider" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>		
+</div>
+	</div>
+			
+
+
+
+
+			<div class="col-md-7">
+				<p class="new-arrival text-center">NEW</p>
+				<h2>Men's T Shirt V Neck - Blue Color</h2>
+				<p>Product Code: IRSC2020</p>
+
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-half-o"></i>
+
+					<p class="price">USD $15.00</p>
+					<p><b>Availability:</b>IN Stock</p>
+					<p><b>Condition:</b>New</p>
+					<p><b>Brand:</b>XYZ Company</p>
+					<label>Quantity:</label>
+					<input type="text" value="1">
+					<button type="button" class="btn btn-primary">Add to Cart</button>
+				
+			</div>
+	
+		</div>
+	</div>
+</section>
+
+
+<!-- ----------------product description------------------- -->
+
+<section class="product-description">
+	<div class="container">
+		<h6>Product Description</h6>
+		<p>Subscribe Easy Tutorial YouTube Channel to watch more videos and press the bell icon Subscribe Easy Tutorial YouTube Channel to watch more videos and press the bell icon Subscribe Easy Tutorial YouTube Channel to watch more videos and press the bell icon Subscribe Easy Tutorial YouTube Channel to watch more videos and press the bell icon Subscribe Easy Tutorial YouTube Channel to watch more videos and press the bell icon Subscribe Easy Tutorial YouTube Channel to watch more videos and press the bell icon Subscribe Easy Tutorial YouTube Channel to watch more videos and press the bell icon Subscribe Easy Tutorial YouTube Channel to watch more videos and press the bell icon</p>
+		<p>Subscribe Easy Tutorial YouTube Channel to watch more videos and press the bell icon Subscribe Easy Tutorial YouTube Channel to watch more videos and press the bell icon Subscribe Easy Tutorial YouTube Channel to watch more videos and press the bell icon Subscribe Easy Tutorial YouTube Channel to watch more videos and press the bell icon Subscribe Easy Tutorial YouTube Channel to watch more videos and press the bell icon Subscribe Easy Tutorial YouTube Channel to watch more videos and press the bell icon Subscribe Easy Tutorial YouTube Channel to watch more videos and press the bell icon Subscribe Easy Tutorial YouTube Channel to watch more videos and press the bell icon</p>
+		<hr>
+	</div>
+
+<div class="container">
+		<div class="title-box">
+			<h2>Similar</h2>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-3">
+				<div class="product-top">
+					<img src="./E-Commerce Website Single Product_files/wat.jpg" height="260">
+					<div class="overlay-right">
+						<button type="button" class="btn-btn-secondary" title="Quick Shop">
+							<i class="fa fa-eye"></i>
+						</button>
+
+						<button type="button" class="btn-btn-secondary" title="Quick Shop">
+							<i class="fa fa-heart-o"></i>
+						</button>
+
+						<button type="button" class="btn-btn-secondary" title="Quick Shop">
+							<i class="fa fa-shopping-cart"></i>
+						</button>
+
+					</div>
+				</div>
+				
+				<div class="product-bottom text-center">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-half-o"></i>
+					<h3>Fitness Watch</h3>
+					<h5>$40.00</h5>
+				</div>
+			</div>
+
+
+
+			<div class="col-md-3">
+				<div class="product-top">
+					<img src="./E-Commerce Website Single Product_files/ax.jpg" height="260">
+					<div class="overlay-right">
+						<button type="button" class="btn-btn-secondary" title="Quick Shop">
+							<i class="fa fa-eye"></i>
+						</button>
+
+						<button type="button" class="btn-btn-secondary" title="Quick Shop">
+							<i class="fa fa-heart-o"></i>
+						</button>
+
+						<button type="button" class="btn-btn-secondary" title="Quick Shop">
+							<i class="fa fa-shopping-cart"></i>
+						</button>
+
+					</div>
+				</div>
+				
+				<div class="product-bottom text-center">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<h3>Smart Watch</h3>
+					<h5>$50.00</h5>
+				</div>
+			</div>
+
+
+
+			<div class="col-md-3">
+				<div class="product-top">
+					<img src="./E-Commerce Website Single Product_files/se.jpg" height="260">
+					<div class="overlay-right">
+						<button type="button" class="btn-btn-secondary" title="Quick Shop">
+							<i class="fa fa-eye"></i>
+						</button>
+
+						<button type="button" class="btn-btn-secondary" title="Quick Shop">
+							<i class="fa fa-heart-o"></i>
+						</button>
+
+						<button type="button" class="btn-btn-secondary" title="Quick Shop">
+							<i class="fa fa-shopping-cart"></i>
+						</button>
+
+					</div>
+				</div>
+				
+				<div class="product-bottom text-center">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<h3>Formal Shoes</h3>
+					<h5>$500.00</h5>
+				</div>
+			</div>
+
+
+          
+			<div class="col-md-3">
+				<div class="product-top">
+				      <img src="./E-Commerce Website Single Product_files/de.jpg" height="260">
+					<div class="overlay-right">
+						<button type="button" class="btn-btn-secondary" title="Quick Shop">
+							<i class="fa fa-eye"></i>
+						</button>
+
+						<button type="button" class="btn-btn-secondary" title="Quick Shop">
+							<i class="fa fa-heart-o"></i>
+						</button>
+
+						<button type="button" class="btn-btn-secondary" title="Quick Shop">
+							<i class="fa fa-shopping-cart"></i>
+						</button>
+
+					</div>
+				</div>
+				
+				<div class="product-bottom text-center">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<h3>Leather Watch</h3>
+					<h5>$300.00</h5>
+				</div>
+			</div>
+	
+</div></div></section>
+	
+<!-- ----------------- Footer-------------------------- -->
+<section class="footer">
+	<div class="container tex-center">
+		<div class="row">
+			<div class="col-md-3">
+				<h1>Useful Links</h1>
+				<p>Privacy Policy</p>
+				<p>Terms of Use</p>
+				<p>Return Policy</p>
+				<p>Discount Coupons</p>
+			</div>
+
+
+			<div class="col-md-3">
+				<h1>Comapny</h1>
+				<p>About Us</p>
+				<p>Contact Us</p>
+				<p>Career</p>
+				<p>Affiliate</p>
+			</div>
+
+
+			<div class="col-md-3">
+				<h1>Follow Us On</h1>
+				<p> <i class="fa fa-facebook-official"></i> Facebook</p>
+				<p> <i class="fa fa-youtube-play"></i> YouTube</p>
+				<p> <i class="fa fa-linkedin"></i> Linkedin</p>
+				<p> <i class="fa fa-twitter"></i> Twitter</p>
+			</div>
+
+
+			<div class="col-md-3 footer-image">
+				<h1>Download App</h1>
+				<img src="./E-Commerce Website Single Product_files/xy.jpg">
+			</div>
+		</div>
+		<hr>
+		<p class="copyright">Made with<i class="fa fa-heart-o"></i> by Easy Tutorials</p>
+		
+	</div>
+	
+</section>
+
+<script type="text/javascript">
+	
+			function openmenu()
+			{
+				document.getElementById('side-menu').style.display="block"
+				document.getElementById('menu-btn').style.display="none"
+				document.getElementById('close-btn').style.display="block"
+			}
+
+			function closemenu()
+			{
+				document.getElementById('side-menu').style.display="none"
+				document.getElementById('menu-btn').style.display="block"
+				document.getElementById('close-btn').style.display="none"
+			}
+</script>
+
+
+</body></html>
